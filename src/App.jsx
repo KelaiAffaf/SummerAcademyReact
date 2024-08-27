@@ -6,8 +6,9 @@ import { Card, Box } from "./Components";
 import Child3 from "./Components/Child3";
 import States from "./Components/StateManagement/States";
 import Show from "./Components/StateManagement/Show";
-import FormValidation from "./Effects/FormValidation";
-import UseCaseLiveFilter from "./Effects/Filter";
+import FormValidation from "./Components/Effects/FormValidation";
+import UseCaseLiveFilter from "./Components/Effects/Filter";
+import Login from "./Login/Login";
 const countriesData = [
   {
     name: "United States",
@@ -152,7 +153,7 @@ const countriesData = [
 ];
 function App() {
   return (
-    <div className="xxx">
+    <div className="container">
       {/* {countriesData.map((country, index) => {
         return (
           <Card
@@ -167,7 +168,10 @@ function App() {
       {/* <States /> */}
       {/* <Show /> */}
       {/* <FormValidation /> */}
-      <UseCaseLiveFilter />
+      {/* <UseCaseLiveFilter /> */}
+      <div className="filter">
+        <Login />
+      </div>
     </div>
   );
 }
