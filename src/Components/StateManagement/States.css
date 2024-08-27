@@ -1,0 +1,29 @@
+.boxOne,
+.boxTwo {
+  height: 200px;
+  width: 200px;
+}
+
+.boxOne {
+  border: 1px solid red;
+}
+
+.boxTwo {
+  border: 1px solid blue;
+}
+
+button {
+  margin-top: 20px;
+  border: none;
+  padding: 10px 20px;
+}
+
+.box1 button {
+  background-color: red;
+  color: white;
+}
+
+.box2 button {
+  background-color: blue;
+  color: white;
+}

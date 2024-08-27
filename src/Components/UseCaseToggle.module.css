@@ -1,0 +1,10 @@
+.toggledClass {
+  background-color: aqua;
+}
+.light {
+  background-color: beige;
+}
+.dark {
+  background-color: black;
+  color: white;
+}

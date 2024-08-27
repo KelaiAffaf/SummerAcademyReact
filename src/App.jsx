@@ -3,7 +3,11 @@ import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import "./App.css";
 import { Card, Box } from "./Components";
-
+import Child3 from "./Components/Child3";
+import States from "./Components/StateManagement/States";
+import Show from "./Components/StateManagement/Show";
+import FormValidation from "./Effects/FormValidation";
+import UseCaseLiveFilter from "./Effects/Filter";
 const countriesData = [
   {
     name: "United States",
@@ -148,10 +152,11 @@ const countriesData = [
 ];
 function App() {
   return (
-    <div className="countries">
+    <div className="xxx">
       {/* {countriesData.map((country, index) => {
         return (
           <Card
+            key={index}
             flag={country.flag}
             name={country.name}
             population={country.population}
@@ -159,9 +164,10 @@ function App() {
         );
       })} */}
 
-      <div style={{ border: "1px solid red" }}>
-        <Box title="this is the main title" />
-      </div>
+      {/* <States /> */}
+      {/* <Show /> */}
+      {/* <FormValidation /> */}
+      <UseCaseLiveFilter />
     </div>
   );
 }
